@@ -1,0 +1,4 @@
+# Core dependencies
+playwright
+browser-use
+asyncio
