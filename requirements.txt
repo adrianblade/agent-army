@@ -1,0 +1,6 @@
+# Core dependencies
+streamlit
+openai
+crewai
+playwright
+html2text
