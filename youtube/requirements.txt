@@ -1,0 +1,6 @@
+# Core dependencies
+agno
+azure-ai-inference
+aiohttp
+python-pptx
+youtube_transcript_api
