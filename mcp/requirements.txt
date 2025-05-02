@@ -1,5 +1,0 @@
-# Core dependencies
-agno
-azure-ai-inference
-aiohttp
-jira
