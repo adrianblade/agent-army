@@ -1,5 +1,0 @@
-# Core dependencies
-agno
-atlassian-python-api
-azure-ai-inference
-aiohttp
