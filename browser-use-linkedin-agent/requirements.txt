@@ -1,0 +1,4 @@
+# Core dependencies
+playwright>=1.51.0
+browser-use==0.1.41
+asyncio==3.4.3

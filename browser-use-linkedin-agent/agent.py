@@ -2,7 +2,8 @@ import os
 import asyncio
 
 from langchain_openai import AzureChatOpenAI
-from browser_use import Agent
+from browser_use import Agent, Browser, BrowserConfig
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -21,11 +22,21 @@ llm = AzureChatOpenAI(
     api_version='2024-08-01-preview'  # Explicitly set the API version here
 )
 
+browser = Browser(
+	config=BrowserConfig(
+		browser_binary_path='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+	)
+)
+
 async def main():
     agent = Agent(
-        task="Finds in https://shop.mango.com/es/es a white dresses and returns the price and urls",
+        task="Go to in https://www.linkedin.com/feed/ a and give me a summary of the page",
         llm=llm,
+        browser=browser,
     )
     await agent.run()
+    await browser.close()
+    input('Press Enter to close...')
 
-asyncio.run(main())
+if __name__ == '__main__':
+    asyncio.run(main())
