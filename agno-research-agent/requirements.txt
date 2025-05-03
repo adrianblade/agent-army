@@ -1,0 +1,7 @@
+# Core dependencies
+agno
+azure-ai-inference
+duckduckgo_search
+openai
+newspaper4k
+lxml_html_clean
